@@ -1,0 +1,43 @@
+Mon Nov 22 18:48:21 CST 2021
+login1.ls6.tacc.utexas.edu
+/scratch/02890/yaojie/PIPE/Re180N/openpipeflow-1.21-P
+mpif90 -fpp -c -O3 -mcmodel=medium -I/usr/include -I/scratch/tacc/apps/intel19/impi19_0/fftw3/3.3.10/include -I/opt/apps/intel19/impi19_0/parallel-netcdf/4.6.2/x86_64/include
+#define _Nr 4
+#define _Ns 128
+#define _Np (_Nr*_Ns)
+ i_N           = 192
+ i_K           = 512
+ i_M           = 128
+ i_Mp          = 1
+ d_Re          = 5300d0
+ d_alpha       = 0.2d0
+ b_const_flux  = .true.
+ b_mirrorsym   = .false.
+ b_shiftrefl   = .false.
+ b_shiftrott   = .false.
+ d_minE3d      = 1d-5
+ i_save_rate1  = 1000
+ i_save_rate2  = 10 
+ i_save_rate3  = 250 
+ i_startstep   = 0 
+ i_maxtstep    = -1
+ d_maxt        = -1d0
+ d_cpuhours    = 8.0 
+ d_time        = 0d0 
+ d_timestep    = 0.001d0 
+ d_maxdt       = 1d99
+ d_dterr       = 1d-5 
+ d_courant     = 0.5d0
+ d_implicit    = 0.51d0
+ i_KL  = 4   
+ i_K1  = i_K-1
+ i_M1  = i_M-1
+ i_Z   = 3*i_K
+ i_Th  = 3*i_M
+ i_H1  = (2*i_K1+1)*i_M-i_K1-1
+ i_pN  = (_Nr+i_N-1)/_Nr
+ i_pH1 = (_Nr+_Hs1)/_Nr-1
+ i_pZ  = i_Z/_Ns
+ d_PI  = 3.1415926535897931d0
+      if(modulo(i_Z,_Ns)/=0) stop '_Ns must divide i_Z'
+      if(modulo(i_M,_Ns)/=0) stop '_Ns must divide i_M'

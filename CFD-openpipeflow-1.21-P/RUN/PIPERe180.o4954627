@@ -1,0 +1,21 @@
+cpu-24-25
+
+Currently Loaded Modules:
+  1) nocona/0.15.4     5) netcdf-c/4.7.3-mpi         9) gnuplot/5.2.8
+  2) gcc/10.1.0        6) netcdf-fortran/4.5.2-mpi  10) matlab/R2020b
+  3) openmpi/3.1.6     7) fftw/3.3.8-mpi-openmp
+  4) openblas/0.3.10   8) netlib-lapack/3.8.0
+/lustre/work/ssingha/jie_yao/openpipeflow-1.21-P/RUN
+Mon Feb 28 13:23:23 CST 2022
+ precomputing function requisites...
+ loading state...
+ Ur K :         512  -->         1024
+ Ut K :         512  -->         1024
+ Uz K :         512  -->         1024
+ initialising output files...
+ timestepping.....
+  saving state00000000  t=   0.0000000000000000     
+  saving statistics00000000  t=   0.0000000000000000     
+  saving statistics00000000  t=   0.0000000000000000     
+  step=           0  its=           1
+  step=          10  its=           1
