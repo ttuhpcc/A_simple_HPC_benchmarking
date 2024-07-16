@@ -1,0 +1,41 @@
+shell                         mkdir restartfiles AllCordinates
+
+units	                      lj
+
+neigh_modify	              delay 0 every 1 one 2000 page 100000
+
+atom_style	              full
+
+pair_style                    lj/cut 2.5
+
+boundary                      p p p
+
+pair_modify                   mix arithmetic tail yes
+
+read_data                     N_Molecules_coordinates
+
+
+variable 	              Timestep equal 0.003 #LJ
+
+timestep 	              ${Timestep}
+
+variable 	              Time equal step*v_Timestep
+
+#Dumping Atom by types
+
+dump                          1 all custom 1000 AllCordinates/dump.AllCordinates.* id mol type q mass xu yu zu 
+
+dump_modify                   1 sort id
+
+fix                           3 all  nvt temp 1.0 1.0 0.3
+
+thermo_style 	              custom step temp press vol etotal epair emol evdwl ecoul elong ebond eangle enthalpy pe ke lx ly lz cpu
+
+thermo        	              1000
+
+restart             	      10000 restartfiles/mixture.restart.*
+ 
+run 	                      1000000                     # Increase me to run for longer time
+
+write_data                   Data.LJ_output
+
