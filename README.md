@@ -1,5 +1,5 @@
 # HPC_benchmarking
-A collection of benchmarking tests for high-performance computing clusters for educational &amp; testing purposes
+A collection of benchmarking tests for high-performance computing clusters for educational &amp; testing purposes. 
 The list consists of 
 * Tips for running  [HPL Benchmarking](https://netlib.org/benchmark/hpl/)
 * Tips for running [HPCG](https://www.hpcg-benchmark.org/)
