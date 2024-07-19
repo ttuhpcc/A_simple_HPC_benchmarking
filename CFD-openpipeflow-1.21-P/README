@@ -1,1 +1,3 @@
-
+Nominal Instructions
+*The script to submit to slurm is "script_nocona.sh". Modify it suitably in case you're running it on another cluster than the "Nocona" partition at TTU HPCC.
+*
