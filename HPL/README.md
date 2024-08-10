@@ -2,9 +2,7 @@
 
 ## Introduction
 
-High-Performance Linpack (HPL) is a benchmark used to measure the
-floating-point computing power of a system. It’s a standard benchmark
-for evaluating the performance of supercomputers.
+High-Performance Linpack (HPL) is a benchmark used to measure the floating-point computing power of a system. It’s a standard benchmark for evaluating the performance of supercomputers.
 
 ## Step-by-Step Guide
 
@@ -60,37 +58,23 @@ To find the paths to these libraries/modules
 
 **Example makefile**
 ``` bash
-
-# ----------------------------------------------------------------------
-# - Platform identifier ------------------------------------------------
-# ----------------------------------------------------------------------
-#
 ARCH         = $(arch)
-#
-# ----------------------------------------------------------------------
-# - HPL Directory Structure / HPL library ------------------------------
-# ----------------------------------------------------------------------
-#
+
 TOPdir       = $(HOME)/hpl-2.3
 INCdir       = $(TOPdir)/include
 BINdir       = $(TOPdir)/bin/$(ARCH)
 LIBdir       = $(TOPdir)/lib/$(ARCH)
-#
+
 HPLlib       = $(LIBdir)/libhpl.a 
-#
-# ----------------------------------------------------------------------
-# - Message Passing library (MPI) --------------------------------------
-# ----------------------------------------------------------------------
-# MPinc tells the  C  compiler where to find the Message Passing library
-# header files,  MPlib  is defined  to be the name of  the library to be 
-# used. The variable MPdir is only used for defining MPinc and MPlib.
-#
+
 MPdir        = /opt/apps/nfs/spack/opt/spack/linux-centos8-zen2/gcc-9.2.0/openmpi-4.0.4-7s5s4ctaquh6we2nzffv7frfpy4qvqyw
 MPinc        = -I$(MPdir)/include
 MPlib        = $(MPdir)/lib/libmpi.so
-#
-```
 
+CC           = mpicc
+CCNOOPT      = $(HPL_DEFS) 
+CCFLAGS      = $(HPL_DEFS) 
+```
 ### 4. Compile HPL
 
 **Build HPL:**
@@ -148,6 +132,4 @@ This runs the HPL benchmark using 4 MPI processes.
 
 ## Conclusion
 
-After running the benchmark, you’ll see performance results in terms of
-GFLOPS (Giga Floating Point Operations per Second). These results can be
-used to gauge the performance of your system.
+After running the benchmark, you’ll see performance results in terms of GFLOPS (Giga Floating Point Operations per Second). These results can be used to gauge the performance of your system.
