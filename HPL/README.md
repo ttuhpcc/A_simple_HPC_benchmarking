@@ -14,8 +14,8 @@ High-Performance Linpack (HPL) is a benchmark used to measure the floating-point
 Operations was conducted on the Nocona Cluster
 These libraries were available to be loaded as modules, they also can be downloaded from: 
 ```
-```OpenMPI - 4.0.4 ``` - [https://www.open-mpi.org/software/ompi/v5.0/](https://www.open-mpi.org/software/ompi/v5.0/)
-```GCC - 9.2.0 ``` - [https://gcc.gnu.org/](https://gcc.gnu.org/)
+```OpenMPI - 4.0.4 ``` - [https://www.open-mpi.org/software/ompi/v5.0/](https://www.open-mpi.org/software/ompi/v5.0/)  
+```GCC - 9.2.0 ``` - [https://gcc.gnu.org/](https://gcc.gnu.org/)  
 ```OpenBLAS ``` - [https://github.com/OpenMathLib/OpenBLAS)](https://github.com/OpenMathLib/OpenBLAS)
 
 ### 2. Download and Extract HPL
