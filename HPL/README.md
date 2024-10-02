@@ -39,13 +39,13 @@ cd hpl-2.3
 **Copy the Makefile for your environment:**
 
 ``` bash
-cp setup/Make.UNKNOWN Makefile
+cp setup/Make.UNKNOWN Makefile.Linux
 ```
 
 **Edit the Makefile to set the required libraries and compilers:**
 
 ``` bash
-vi Makefile
+vi Makefile.Linux
 ```
 
 Set `MPdir`, `MPinc`, and `MPlib` to the OpenMPI paths.  
@@ -85,7 +85,7 @@ make arch=Linux
 ### 5. Configure the HPL.dat File
 
 ``` bash
-cd bin/<arch>
+cd bin/<arch>brew
 ```
 **Example:**
 
@@ -117,8 +117,8 @@ Set the problem size (`N`) and block size (`NB`).
     16.0         threshold
 
 **Recommended problem sizes, block Sizes and HPL.dat can be derived using either of the following websites:**
-https://www.advancedclustering.com/act_kb/tune-hpl-dat-file/
-https://hpl-calculator.sourceforge.net/
+![HPL.DAT Tuning](https://www.advancedclustering.com/act_kb/tune-hpl-dat-file/)
+![HPL Calculator](https://hpl-calculator.sourceforge.net/)
 
 ### 6. Run the Benchmark
 
@@ -130,6 +130,17 @@ mpirun -np 4 ./xhpl
 
 This runs the HPL benchmark using 4 MPI processes.
 
+### Results
+
+![Sample HPL Result](/Images/hpl.png)
+
 ## Conclusion
 
 After running the benchmark, you’ll see performance results in terms of GFLOPS (Giga Floating Point Operations per Second). These results can be used to gauge the performance of your system.
+
+## References
+
+- [HPL Documentation](https://www.netlib.org/benchmark/hpl/index.html)
+- [HPL Input file Tuning](https://www.netlib.org/benchmark/hpl/tuning.html)
+- [HPL - University of Luxembourg Tutorials Documentation](https://ulhpc-tutorials.readthedocs.io/en/latest/parallel/mpi/HPL/)
+- [HPL Calculator](https://hpl-calculator.sourceforge.net/)
