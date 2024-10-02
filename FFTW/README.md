@@ -105,7 +105,8 @@ This runs the FFTW benchmark using 4 MPI processes.
 
 ### Results
 
-![Sample FFTW Result](/Images/mpi-result.png) ![Sample FFTW Result](/Images/mpi-end.png)
+| ![Sample FFTW Result](/Images/mpi-result.png) | ![Sample FFTW Result](/Images/mpi-end.png) |
+|:--:|:--:|
 
 ## Conclusion
 
