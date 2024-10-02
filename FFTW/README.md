@@ -108,6 +108,8 @@ This runs the FFTW benchmark using 4 MPI processes.
 | ![Sample FFTW Result](/Images/mpi-result.png) | ![Sample FFTW Result](/Images/mpi-end.png) |
 |:--:|:--:|
 
+> **Note:** Sample result from compiled [Sample Code](/FFTW/sample.c)
+
 ## Conclusion
 
 After running the benchmark, the output will provide detailed performance metrics, including the time taken for the transforms and efficiency data. This information is crucial for evaluating FFTW's performance in your specific applications.

@@ -116,9 +116,11 @@ Set the problem size (`N`) and block size (`NB`).
     2            Qs
     16.0         threshold
 
-**Recommended problem sizes, block Sizes and HPL.dat can be derived using either of the following websites:**
-[HPL.DAT Tuning](https://www.advancedclustering.com/act_kb/tune-hpl-dat-file/)
-[HPL Calculator](https://hpl-calculator.sourceforge.net/)
+**Recommended problem sizes, block sizes, and HPL.dat can be derived using either of the following websites:**
+
+1. [HPL.DAT Tuning](https://www.advancedclustering.com/act_kb/tune-hpl-dat-file/)
+2. [HPL Calculator](https://hpl-calculator.sourceforge.net/)
+
 
 ### 6. Run the Benchmark
 
