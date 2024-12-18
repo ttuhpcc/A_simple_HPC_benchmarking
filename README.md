@@ -4,7 +4,7 @@ The list consists of the following software and sample codes:
 
 * Benchmarking with HPL [HPL Benchmarking](./HPL/README.md)
     *  Tips for installation
-    *  Running two kinds of benchmarks in an HPC cluster with appropriate ssoftware stacks and SLURM scheduler a) Multiple single-node runs, b) One large parallel multinode run   
+    *  Benchmarks for HPC cluster with appropriate software stacks and SLURM scheduler a) Multiple single-node runs, b) One large parallel multinode run   
 * Tips for running [High Performance Conjugate Gradient](./HPCG/README.md)
 * A sample code designed to call the subroutine library for [FFTW](http://www.fftw.org/benchfft/) which is a fast fourier transform for computing the discrete Fourier transform in multiple dimensions.
 * Two specific sample examples of a popular opensource molecular dynamics program called [LAMMPS](https://www.lammps.org/#gsc.tab=0) originating from Sandia National Laboratoy
