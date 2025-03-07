@@ -1,0 +1,375 @@
+This is hostnode: cpu-2-1
+cpu-2-1
+================================================================================
+HPLinpack 2.3  --  High-Performance Linpack benchmark  --   December 2, 2018
+Written by A. Petitet and R. Clint Whaley,  Innovative Computing Laboratory, UTK
+Modified by Piotr Luszczek, Innovative Computing Laboratory, UTK
+Modified by Julien Langou, University of Colorado Denver
+================================================================================
+
+An explanation of the input/output parameters follows:
+T/V    : Wall time / encoded variant.
+N      : The order of the coefficient matrix A.
+NB     : The partitioning blocking factor.
+P      : The number of process rows.
+Q      : The number of process columns.
+Time   : Time in seconds to solve the linear system.
+Gflops : Rate of execution for solving the linear system.
+
+The following parameter values will be used:
+
+N      :   14169 
+NB     :     192 
+PMAP   : Row-major process mapping
+P      :       6 
+Q      :       6 
+PFACT  :   Right 
+NBMIN  :       4 
+NDIV   :       2 
+RFACT  :   Crout 
+BCAST  :  1ringM 
+DEPTH  :       1 
+SWAP   : Mix (threshold = 64)
+L1     : transposed form
+U      : transposed form
+EQUIL  : yes
+ALIGN  : 8 double precision words
+
+--------------------------------------------------------------------------------
+
+- The matrix A is randomly generated for each test.
+- The following scaled residual check will be computed:
+      ||Ax-b||_oo / ( eps * ( || x ||_oo * || A ||_oo + || b ||_oo ) * N )
+- The relative machine precision (eps) is taken to be               0.000000e+00
+- Computational tests pass if scaled residuals are less than                16.0
+
+
+
+
+
+
+
+Intel oneMKL ERROR: Parameter 10 was incorrect on entry to DGEMM .
+Intel oneMKL ERROR: Parameter 10 was incorrect on entry to DGEMM .
+Intel oneMKL ERROR: Parameter 10 was incorrect on entry to DGEMM .
+Intel oneMKL ERROR: Parameter 10 was incorrect on entry to DGEMM .
+Intel oneMKL ERROR: Parameter 10 was incorrect on entry to DGEMM .
+Intel oneMKL ERROR: Parameter 10 was incorrect on entry to DGEMM .
+MKL_VERBOSE oneMKL 2024.0 Update 2 Patch 1 Product build 20240722 for Intel(R) 64 architecture Intel(R) Advanced Vector Extensions 2 (Intel(R) AVX2) enabled processors, Lnx 2.10GHz ilp64 intel_thread
+MKL_VERBOSE DGEMM(N,T,2304,9895604650080,412316860416,0x7fff6ee9f940,0x153eefadc040,2304,0x153eef733040,192,0x7fff6ee9f938,0x153eefadc040,2304) 3.73us CNR:OFF Dyn:1 FastMM:1 TID:0  NThr:1
+
+Intel oneMKL ERROR: Parameter 10 was incorrect on entry to DGEMM .
+MKL_VERBOSE DGEMM(N,T,2304,9895604650032,206158430208,0x7fff6ee9f880,0x153eefadc040,2304,0x153eef733040,192,0x7fff6ee9f878,0x153eefadc040,2304) 97ns CNR:OFF Dyn:1 FastMM:1 TID:0  NThr:1
+
+Intel oneMKL ERROR: Parameter 10 was incorrect on entry to DGEMM .
+MKL_VERBOSE DGEMM(N,T,2304,9895604650008,103079215104,0x7fff6ee9f7c0,0x153eefadc040,2304,0x153eef733040,192,0x7fff6ee9f7b8,0x153eefadc040,2304) 79ns CNR:OFF Dyn:1 FastMM:1 TID:0  NThr:1
+
+Intel oneMKL ERROR: Parameter 10 was incorrect on entry to DGEMM .
+MKL_VERBOSE DGEMM(N,T,2304,9895604649996,51539607552,0x7fff6ee9f700,0x153eefadc040,2304,0x153eef733040,192,0x7fff6ee9f6f8,0x153eefadc040,2304) 77ns CNR:OFF Dyn:1 FastMM:1 TID:0  NThr:1
+
+Intel oneMKL ERROR: Parameter 10 was incorrect on entry to DGEMM .
+MKL_VERBOSE DGEMM(N,T,2304,9895604649992,34359738368,0x7fff6ee9f640,0x153eefadc040,2304,0x153eef733040,192,0x7fff6ee9f638,0x153eefadc040,2304) 79ns CNR:OFF Dyn:1 FastMM:1 TID:0  NThr:1
+
+Intel oneMKL ERROR: Parameter 10 was incorrect on entry to DGEMM .
+MKL_VERBOSE DGEMM(N,T,2304,9895604649988,17179869184,0x7fff6ee9f580,0x153eefadc040,2304,0x153eef733040,192,0x7fff6ee9f578,0x153eefadc040,2304) 79ns CNR:OFF Dyn:1 FastMM:1 TID:0  NThr:1
+MKL_VERBOSE oneMKL 2024.0 Update 2 Patch 1 Product build 20240722 for Intel(R) 64 architecture Intel(R) Advanced Vector Extensions 2 (Intel(R) AVX2) enabled processors, Lnx 2.10GHz ilp64 intel_thread
+MKL_VERBOSE DGEMM(N,T,2457,10552734646368,412316860416,0x7ffe5de11730,0x14ca50c3f040,2464,0x14ca50896040,192,0x7ffe5de11728,0x14ca50c3f040,2464) 232ns CNR:OFF Dyn:1 FastMM:1 TID:0  NThr:1
+
+Intel oneMKL ERROR: Parameter 10 was incorrect on entry to DGEMM .
+MKL_VERBOSE DGEMM(N,T,2457,10552734646320,206158430208,0x7ffe5de11670,0x14ca50c3f040,2464,0x14ca50896040,192,0x7ffe5de11668,0x14ca50c3f040,2464) 89ns CNR:OFF Dyn:1 FastMM:1 TID:0  NThr:1
+
+Intel oneMKL ERROR: Parameter 10 was incorrect on entry to DGEMM .
+MKL_VERBOSE DGEMM(N,T,2457,10552734646296,103079215104,0x7ffe5de115b0,0x14ca50c3f040,2464,0x14ca50896040,192,0x7ffe5de115a8,0x14ca50c3f040,2464) 68ns CNR:OFF Dyn:1 FastMM:1 TID:0  NThr:1
+
+Intel oneMKL ERROR: Parameter 10 was incorrect on entry to DGEMM .
+MKL_VERBOSE DGEMM(N,T,2457,10552734646284,51539607552,0x7ffe5de114f0,0x14ca50c3f040,2464,0x14ca50896040,192,0x7ffe5de114e8,0x14ca50c3f040,2464) 67ns CNR:OFF Dyn:1 FastMM:1 TID:0  NThr:1
+
+Intel oneMKL ERROR: Parameter 10 was incorrect on entry to DGEMM .
+MKL_VERBOSE DGEMM(N,T,2457,10552734646280,34359738368,0x7ffe5de11430,0x14ca50c3f040,2464,0x14ca50896040,192,0x7ffe5de11428,0x14ca50c3f040,2464) 70ns CNR:OFF Dyn:1 FastMM:1 TID:0  NThr:1
+
+Intel oneMKL ERROR: Parameter 10 was incorrect on entry to DGEMM .
+MKL_VERBOSE DGEMM(N,T,2457,10552734646276,17179869184,0x7ffe5de11370,0x14ca50c3f040,2464,0x14ca50896040,192,0x7ffe5de11368,0x14ca50c3f040,2464) 69ns CNR:OFF Dyn:1 FastMM:1 TID:0  NThr:1
+MKL_VERBOSE oneMKL 2024.0 Update 2 Patch 1 Product build 20240722 for Intel(R) 64 architecture Intel(R) Advanced Vector Extensions 2 (Intel(R) AVX2) enabled processors, Lnx 2.10GHz ilp64 intel_thread
+MKL_VERBOSE DGEMM(N,T,2496,10720238370912,412316860416,0x7ffda7568160,0x149448bb6040,2496,0x14944880d040,192,0x7ffda7568158,0x149448bb6040,2496) 518ns CNR:OFF Dyn:1 FastMM:1 TID:0  NThr:1
+
+Intel oneMKL ERROR: Parameter 10 was incorrect on entry to DGEMM .
+MKL_VERBOSE DGEMM(N,T,2496,10720238370864,206158430208,0x7ffda75680a0,0x149448bb6040,2496,0x14944880d040,192,0x7ffda7568098,0x149448bb6040,2496) 107ns CNR:OFF Dyn:1 FastMM:1 TID:0  NThr:1
+
+Intel oneMKL ERROR: Parameter 10 was incorrect on entry to DGEMM .
+MKL_VERBOSE DGEMM(N,T,2496,10720238370840,103079215104,0x7ffda7567fe0,0x149448bb6040,2496,0x14944880d040,192,0x7ffda7567fd8,0x149448bb6040,2496) 57ns CNR:OFF Dyn:1 FastMM:1 TID:0  NThr:1
+
+Intel oneMKL ERROR: Parameter 10 was incorrect on entry to DGEMM .
+MKL_VERBOSE DGEMM(N,T,2496,10720238370828,51539607552,0x7ffda7567f20,0x149448bb6040,2496,0x14944880d040,192,0x7ffda7567f18,0x149448bb6040,2496) 56ns CNR:OFF Dyn:1 FastMM:1 TID:0  NThr:1
+
+Intel oneMKL ERROR: Parameter 10 was incorrect on entry to DGEMM .
+MKL_VERBOSE DGEMM(N,T,2496,10720238370824,34359738368,0x7ffda7567e60,0x149448bb6040,2496,0x14944880d040,192,0x7ffda7567e58,0x149448bb6040,2496) 57ns CNR:OFF Dyn:1 FastMM:1 TID:0  NThr:1
+
+Intel oneMKL ERROR: Parameter 10 was incorrect on entry to DGEMM .
+MKL_VERBOSE DGEMM(N,T,2496,10720238370820,17179869184,0x7ffda7567da0,0x149448bb6040,2496,0x14944880d040,192,0x7ffda7567d98,0x149448bb6040,2496) 56ns CNR:OFF Dyn:1 FastMM:1 TID:0  NThr:1
+MKL_VERBOSE oneMKL 2024.0 Update 2 Patch 1 Product build 20240722 for Intel(R) 64 architecture Intel(R) Advanced Vector Extensions 2 (Intel(R) AVX2) enabled processors, Lnx 2.10GHz ilp64 intel_thread
+MKL_VERBOSE DGEMM(N,T,2304,9895604650080,412316860416,0x7ffeb2087640,0x14540c9a5040,2304,0x14540c5fc040,192,0x7ffeb2087638,0x14540c9a5040,2304) 266ns CNR:OFF Dyn:1 FastMM:1 TID:0  NThr:1
+
+Intel oneMKL ERROR: Parameter 10 was incorrect on entry to DGEMM .
+MKL_VERBOSE DGEMM(N,T,2304,9895604650032,206158430208,0x7ffeb2087580,0x14540c9a5040,2304,0x14540c5fc040,192,0x7ffeb2087578,0x14540c9a5040,2304) 112ns CNR:OFF Dyn:1 FastMM:1 TID:0  NThr:1
+
+Intel oneMKL ERROR: Parameter 10 was incorrect on entry to DGEMM .
+MKL_VERBOSE DGEMM(N,T,2304,9895604650008,103079215104,0x7ffeb20874c0,0x14540c9a5040,2304,0x14540c5fc040,192,0x7ffeb20874b8,0x14540c9a5040,2304) 122ns CNR:OFF Dyn:1 FastMM:1 TID:0  NThr:1
+
+Intel oneMKL ERROR: Parameter 10 was incorrect on entry to DGEMM .
+MKL_VERBOSE DGEMM(N,T,2304,9895604649996,51539607552,0x7ffeb2087400,0x14540c9a5040,2304,0x14540c5fc040,192,0x7ffeb20873f8,0x14540c9a5040,2304) 103ns CNR:OFF Dyn:1 FastMM:1 TID:0  NThr:1
+
+Intel oneMKL ERROR: Parameter 10 was incorrect on entry to DGEMM .
+MKL_VERBOSE DGEMM(N,T,2304,9895604649992,34359738368,0x7ffeb2087340,0x14540c9a5040,2304,0x14540c5fc040,192,0x7ffeb2087338,0x14540c9a5040,2304) 85ns CNR:OFF Dyn:1 FastMM:1 TID:0  NThr:1
+
+Intel oneMKL ERROR: Parameter 10 was incorrect on entry to DGEMM .
+MKL_VERBOSE DGEMM(N,T,2304,9895604649988,17179869184,0x7ffeb2087280,0x14540c9a5040,2304,0x14540c5fc040,192,0x7ffeb2087278,0x14540c9a5040,2304) 90ns CNR:OFF Dyn:1 FastMM:1 TID:0  NThr:1
+MKL_VERBOSE oneMKL 2024.0 Update 2 Patch 1 Product build 20240722 for Intel(R) 64 architecture Intel(R) Advanced Vector Extensions 2 (Intel(R) AVX2) enabled processors, Lnx 2.10GHz ilp64 intel_thread
+MKL_VERBOSE DGEMM(N,T,2304,9895604650080,412316860416,0x7ffc6ca072a0,0x14b6566f1040,2304,0x14b656348040,192,0x7ffc6ca07298,0x14b6566f1040,2304) 346ns CNR:OFF Dyn:1 FastMM:1 TID:0  NThr:1
+
+Intel oneMKL ERROR: Parameter 10 was incorrect on entry to DGEMM .
+MKL_VERBOSE DGEMM(N,T,2304,9895604650032,206158430208,0x7ffc6ca071e0,0x14b6566f1040,2304,0x14b656348040,192,0x7ffc6ca071d8,0x14b6566f1040,2304) 90ns CNR:OFF Dyn:1 FastMM:1 TID:0  NThr:1
+
+Intel oneMKL ERROR: Parameter 10 was incorrect on entry to DGEMM .
+MKL_VERBOSE oneMKL 2024.0 Update 2 Patch 1 Product build 20240722 for Intel(R) 64 architecture Intel(R) Advanced Vector Extensions 2 (Intel(R) AVX2) enabled processors, Lnx 2.10GHz ilp64 intel_thread
+MKL_VERBOSE DGEMM(N,T,2304,9895604650080,412316860416,0x7ffe7ea12370,0x14cce49de040,2304,0x14cce4635040,192,0x7ffe7ea12368,0x14cce49de040,2304) 3.94us CNR:OFF Dyn:1 FastMM:1 TID:0  NThr:1
+
+Intel oneMKL ERROR: Parameter 10 was incorrect on entry to DGEMM .
+MKL_VERBOSE DGEMM(N,T,2304,9895604650032,206158430208,0x7ffe7ea122b0,0x14cce49de040,2304,0x14cce4635040,192,0x7ffe7ea122a8,0x14cce49de040,2304) 99ns CNR:OFF Dyn:1 FastMM:1 TID:0  NThr:1
+
+Intel oneMKL ERROR: Parameter 10 was incorrect on entry to DGEMM .
+MKL_VERBOSE DGEMM(N,T,2304,9895604650008,103079215104,0x7ffe7ea121f0,0x14cce49de040,2304,0x14cce4635040,192,0x7ffe7ea121e8,0x14cce49de040,2304) 57ns CNR:OFF Dyn:1 FastMM:1 TID:0  NThr:1
+
+Intel oneMKL ERROR: Parameter 10 was incorrect on entry to DGEMM .
+MKL_VERBOSE DGEMM(N,T,2304,9895604649996,51539607552,0x7ffe7ea12130,0x14cce49de040,2304,0x14cce4635040,192,0x7ffe7ea12128,0x14cce49de040,2304) 57ns CNR:OFF Dyn:1 FastMM:1 TID:0  NThr:1
+
+Intel oneMKL ERROR: Parameter 10 was incorrect on entry to DGEMM .
+MKL_VERBOSE DGEMM(N,T,2304,9895604649992,34359738368,0x7ffe7ea12070,0x14cce49de040,2304,0x14cce4635040,192,0x7ffe7ea12068,0x14cce49de040,2304) 57ns CNR:OFF Dyn:1 FastMM:1 TID:0  NThr:1
+
+Intel oneMKL ERROR: Parameter 10 was incorrect on entry to DGEMM .
+MKL_VERBOSE DGEMM(N,T,2304,9895604649988,17179869184,0x7ffe7ea11fb0,0x14cce49de040,2304,0x14cce4635040,192,0x7ffe7ea11fa8,0x14cce49de040,2304) 55ns CNR:OFF Dyn:1 FastMM:1 TID:0  NThr:1
+MKL_VERBOSE DGEMM(N,T,2304,9895604650008,103079215104,0x7ffc6ca07120,0x14b6566f1040,2304,0x14b656348040,192,0x7ffc6ca07118,0x14b6566f1040,2304) 59ns CNR:OFF Dyn:1 FastMM:1 TID:0  NThr:1
+
+Intel oneMKL ERROR: Parameter 10 was incorrect on entry to DGEMM .
+MKL_VERBOSE DGEMM(N,T,2304,9895604649996,51539607552,0x7ffc6ca07060,0x14b6566f1040,2304,0x14b656348040,192,0x7ffc6ca07058,0x14b6566f1040,2304) 57ns CNR:OFF Dyn:1 FastMM:1 TID:0  NThr:1
+
+Intel oneMKL ERROR: Parameter 10 was incorrect on entry to DGEMM .
+MKL_VERBOSE DGEMM(N,T,2304,9895604649992,34359738368,0x7ffc6ca06fa0,0x14b6566f1040,2304,0x14b656348040,192,0x7ffc6ca06f98,0x14b6566f1040,2304) 55ns CNR:OFF Dyn:1 FastMM:1 TID:0  NThr:1
+
+Intel oneMKL ERROR: Parameter 10 was incorrect on entry to DGEMM .
+MKL_VERBOSE DGEMM(N,T,2304,9895604649988,17179869184,0x7ffc6ca06ee0,0x14b6566f1040,2304,0x14b656348040,192,0x7ffc6ca06ed8,0x14b6566f1040,2304) 54ns CNR:OFF Dyn:1 FastMM:1 TID:0  NThr:1
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 0 PID 695319 RUNNING AT cpu-2-1
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 1 PID 695320 RUNNING AT cpu-2-1
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 2 PID 695321 RUNNING AT cpu-2-1
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 3 PID 695322 RUNNING AT cpu-2-1
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 4 PID 695323 RUNNING AT cpu-2-1
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 5 PID 695324 RUNNING AT cpu-2-1
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 6 PID 695325 RUNNING AT cpu-2-1
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 7 PID 695326 RUNNING AT cpu-2-1
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 8 PID 695327 RUNNING AT cpu-2-1
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 9 PID 695328 RUNNING AT cpu-2-1
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 10 PID 695329 RUNNING AT cpu-2-1
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 11 PID 695330 RUNNING AT cpu-2-1
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 12 PID 695331 RUNNING AT cpu-2-1
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 13 PID 695332 RUNNING AT cpu-2-1
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 14 PID 695333 RUNNING AT cpu-2-1
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 15 PID 695334 RUNNING AT cpu-2-1
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 16 PID 695335 RUNNING AT cpu-2-1
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 17 PID 695336 RUNNING AT cpu-2-1
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 18 PID 695337 RUNNING AT cpu-2-1
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 19 PID 695338 RUNNING AT cpu-2-1
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 20 PID 695339 RUNNING AT cpu-2-1
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 21 PID 695340 RUNNING AT cpu-2-1
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 22 PID 695342 RUNNING AT cpu-2-1
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 23 PID 695343 RUNNING AT cpu-2-1
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 24 PID 695344 RUNNING AT cpu-2-1
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 25 PID 695345 RUNNING AT cpu-2-1
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 26 PID 695346 RUNNING AT cpu-2-1
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 27 PID 695347 RUNNING AT cpu-2-1
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 28 PID 695348 RUNNING AT cpu-2-1
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 29 PID 695349 RUNNING AT cpu-2-1
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 30 PID 695350 RUNNING AT cpu-2-1
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 31 PID 695351 RUNNING AT cpu-2-1
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 32 PID 695352 RUNNING AT cpu-2-1
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 33 PID 695353 RUNNING AT cpu-2-1
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 34 PID 695354 RUNNING AT cpu-2-1
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 35 PID 695355 RUNNING AT cpu-2-1
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
