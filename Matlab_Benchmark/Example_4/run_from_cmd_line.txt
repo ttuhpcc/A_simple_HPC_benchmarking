@@ -1,0 +1,1 @@
+matlab -nodisplay -nosplash -nodesktop -r "run('/home/ssingha/matlab/Example_4/example_4.m');exit;"
